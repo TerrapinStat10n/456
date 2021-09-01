@@ -1,0 +1,196 @@
+body {
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-attachment: fixed;
+}
+
+#game-wrapper{
+    background-color: whitesmoke;
+    box-shadow: 7px 12px 30px 1px #888888;
+    padding: 25px;
+}
+
+#new-game {
+    background: whitesmoke;
+    border: 2px solid #d34e3b;
+    border-radius: 5px;
+    color: #d34e3b;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    width: 200px;
+}
+
+#player-roll {
+    display: inline;
+    float: left;
+}
+
+#pc-roll {
+    display: inline;
+    float: right;
+}
+
+#player-money {
+    display: block;
+}
+
+.dice {
+    height: 50px;
+    width: 50px;
+}
+
+#money-wrap {
+    display: block;
+}
+
+#bet-title {
+    float: left;
+}
+
+#wager {
+    float: right;
+    width: 180px;
+}
+
+#bet-btns {
+    float: right;
+}
+
+#money-title {
+    float: left;
+}
+
+#player-money {
+    float: right;
+}
+
+#btn-roll {
+    background: whitesmoke;
+    border: 2px solid #494d4c;
+    border-radius: 5px;
+    color: #494d4c;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    width: 200px;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+
+
+/*--- ANIMATIONS ---*/
+
+#add-money {
+    position: relative;
+    top: -35px;
+    left: 200px;
+    opacity: 0;
+}
+
+#subtract-money {
+    position: relative;
+    top: -35px;
+    left: 157px;
+    opacity: 0;
+}
+
+.add-money-color {
+    animation: greenMoney 2s linear; 
+}
+
+.subtract-money-color {
+    animation: redMoney 2s linear; 
+}
+
+.animate-sub-money {
+    animation: subtractMoney 1s linear;
+}
+
+.animate-add-money {
+    animation: addMoney 1s linear;
+}
+
+@keyframes greenMoney {
+    30% {color: lime;}
+}
+
+@keyframes redMoney {
+    30% {color: red;}
+}
+
+@keyframes addMoney {
+    0% {left: 0px;}
+    50% {right: 110px;}
+    50% {opacity: 1;}
+}
+
+@keyframes subtractMoney {
+    0% {left: 0px;}
+    50% {right: 110px;}
+    50% {opacity: 1;}
+}
+
+
+
+
+@media only screen and (max-width: 368px) {
+    
+    body {
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+    #game-wrapper {
+        text-align: center;
+    }
+
+
+    #player-roll {
+        margin: 0 auto;
+        float: none;
+        position: relative;
+    }
+
+    #pc-roll {
+        margin: 0 auto;
+        float: none;
+        position: relative;
+    }
+
+    #bet-title {
+        float: none;
+    }
+
+    #wager {
+        float: none;
+        width: 180px;
+    }
+
+    #bet-btns {
+        display: block;
+        float: none;
+    }
+
+    #money-title {
+        float: none;
+    }
+
+    #player-money {
+        float: none;
+    }
+    
+}
