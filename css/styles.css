@@ -1,9 +1,10 @@
 body {
-    background-image: url("../img/background.png");
+    background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: bottom;
     background-attachment: fixed;
 }
+
 
 #game-wrapper{
     background-color: whitesmoke;
