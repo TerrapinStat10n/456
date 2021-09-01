@@ -1,22 +1,3 @@
-/* A player rolls all three dice simultaneously into the bowl. If a die falls out of the bowl, it is called a 'piss' and results in an automatic loss, the player must then pay the full amount of Potch wagered.
-
-The aim of the game is to get two dice to land on the same number. The remaining number will be that player's 'score'. This score is compared to the score of the other player and the highest scoring individual wins.
-
-If both players end up with the same score, or fail to make any score at all, it's called a draw and neither one of them wins. The money has to be wagered anew for another game.
-
-SPECIAL ROLLS
-
-If a player gets three of the same number (2, 3, 4, 5 or 6), they will automatically win the game and will win thrice the amount of Potch originally wagered.
-
-However, if a player gets three ones, they will automatically lose and must pay triple the amount of Potch wagered to their opponent. These two special arrangements are both called Storm.
-
-Moreover, rolling 4-5-6 will automatically win, granting double the amount of Potch wagered. On the contrary, rolling a 1-2-3 is an automatic loss, and the roller must pay double the wager to their opponent.
-
-*/
-
-// Player starts with 500 that is used as a wager.
-
-
 var wager, playerMoney, playerRoll, pcRoll, playerScore, pcScore, gameReady;
 
 playerMoney = 500;
